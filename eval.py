@@ -66,6 +66,6 @@ for eval_batch in tqdm(evaluation_dataloader):
 wer /= items
 cer /= items
 
-print(f"Evaluated dataset: {evaluation_dataset}")
+print(f"Evaluated dataset: {evaluation_data_root}")
 print(f"Avg. WER: {wer}")
 print(f"Avg. CER: {cer}")
