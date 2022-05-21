@@ -32,8 +32,8 @@ class SpeechTranscriptor(pl.LightningModule):
 
         # self.projector = nn.Linear(in_features=n_mels, out_features=embedding_dim)
 
-        config = T5Config.from_pretrained('checkpoints/ismir2021_torch/config.json')
-        self.t5 = T5ForConditionalGeneration.from_pretrained('checkpoints/ismir2021_torch').to(device)
+        config = T5Config.from_pretrained('t5-small')
+        self.t5 = T5ForConditionalGeneration.from_pretrained('t5-small').to(device)
         # config = T5Config.from_pretrained('t5-small')
         # self.t5 = T5ForConditionalGeneration.from_pretrained('t5-small')
         self.t5.lm_head = nn.Linear(config.d_model, text_classes, bias=False)
