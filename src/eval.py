@@ -10,6 +10,8 @@ from tqdm import tqdm
 evaluated_data_roots = ['./test-other_ordered', './test-other_ordered']
 
 
+tokenizer = LetterTokenizer()
+
 
 model = SpeechTranscriptor(tokenizer=tokenizer,
                            text_classes=tokenizer.num_tokens(),
@@ -24,8 +26,6 @@ model = model.load_from_checkpoint(checkpoint_path='./epoch=59-step=527340.ckpt'
                                    text_classes=tokenizer.num_tokens(),
                                    device=params.device)
 model = model.to(params.device)
-
-tokenizer = LetterTokenizer()
 
 for evaluated_data_root in evaluated_data_roots:
 
