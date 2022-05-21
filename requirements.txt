@@ -6,3 +6,4 @@ transformers
 datasets
 pytorch_lightning
 tqdm
+jiwer
