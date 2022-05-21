@@ -1,4 +1,7 @@
-torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+torch
+torchvision
+torchaudio
+--extra-index-url https://download.pytorch.org/whl/cu113
 transformers
 datasets
 pytorch_lightning
