@@ -1,5 +1,7 @@
 # SpeechRecognitionWithT5
 
+Code for my research paper in the Deep-Learning course at TAU.
+
 For setup:
 
 ```
