@@ -7,7 +7,7 @@ import pytorch_lightning as pl
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-evaluated_data_root = 'LibriSpeech/test-other_ordered'
+evaluated_data_root = './test-other_ordered'
 
 tokenizer = LetterTokenizer()
 
