@@ -24,3 +24,8 @@ python3 src/eval.py
 
 And you'll be getting the results on that subset.
 Make sure you have an available CUDA gpu on your machine.
+
+For plotting the learning curves of the training:
+```
+tensorboard --logdir tensorboard_logs
+```
