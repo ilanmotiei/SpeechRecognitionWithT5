@@ -59,6 +59,6 @@ trainer = pl.Trainer(gpus=params.n_gpus,
                      max_epochs=params.epochs,
                      check_val_every_n_epoch=5,
                      callbacks=[checkpoint_callback],
-                     resume_from_checkpoint='./model_starting_from_magenta_t5/epoch=59-step=527340.ckpt'
+                     # resume_from_checkpoint='./model_starting_from_magenta_t5/epoch=59-step=527340.ckpt'
                      )
 trainer.fit(model, train_dataloader, validation_dataloader)
