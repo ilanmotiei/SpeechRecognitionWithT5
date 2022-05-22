@@ -7,7 +7,7 @@ import pytorch_lightning as pl
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-evaluated_data_roots = ['./test-other_ordered', './test-other_ordered']
+evaluated_data_roots = ['./test-other_ordered', './test-clean_ordered']
 
 
 tokenizer = LetterTokenizer()
